@@ -1,0 +1,118 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    background: #eee;
+}
+
+.top-headers {
+    display: flex;
+    flex: column;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+}
+
+.top-logo, .top-search {
+    margin: 0 16px;
+}
+
+.top-search-box {
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.1);
+    padding: 10px 10px;
+    font: inherit;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid red;
+    color: red;
+}
+
+.top-search-box::placeholder{
+    color: red;
+    font-weight: lighter;
+}
+
+.account-menu-context{
+    margin: 0 16px;
+}
+
+.account-menu{
+    display: flex;
+    flex: column;
+    margin: 8px;
+    padding: 0;
+}
+
+.account-menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 16px;
+}
+
+.account-menu-item:hover{
+    cursor: pointer;
+}
+
+.account-menu-text{
+    color: red;
+    font-weight: bold;
+}
+
+.top-menu-shop-context {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+}
+
+.top-menu-shop {
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu-shop-item {
+    display: inline;
+}
+
+a.menu-item {
+    font-weight: bold;
+    margin: 5px;
+    border: 1px solid white;
+    padding: 10px 20px;
+}
+
+a.menu-item:hover{
+    color: red;
+    background-color: white;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+}
+
+a {
+    color: white;
+    cursor: default;
+    text-decoration: none;
+    outline: none;
+}
+
+.logo-img {
+    width: 130px;
+    height: 96px;
+    border-radius: 20%;
+}
+
+.fa-user, .fa-shopping-cart, .fa-question-circle, .fa-address-book {
+    color: red;
+    margin-bottom: 4px;
+}
