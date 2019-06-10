@@ -47,23 +47,22 @@ body {
 
 .account-menu{
     display: flex;
-    flex: column;
     margin: 8px;
     padding: 0;
 }
 
-.account-menu-item {
+.account-menu li {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 16px;
 }
 
-.account-menu-item:hover{
+.account-menu li:hover{
     cursor: pointer;
 }
 
-.account-menu-text{
+.account-menu li span {
     color: red;
     font-weight: bold;
 }
@@ -76,30 +75,24 @@ body {
     background-color: red;
 }
 
-.top-menu-shop {
-    padding: 0;
-    display: flex;
-    align-items: center;
-}
-
 .menu-shop-item {
     display: inline;
 }
 
-a.menu-item {
+.menu-shop-item a {
     font-weight: bold;
     margin: 5px;
     border: 1px solid white;
     padding: 10px 20px;
 }
 
-a.menu-item:hover{
+.menu-shop-item a:hover{
     color: red;
     background-color: white;
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
 }
 
-a {
+.menu-shop-item a {
     color: white;
     cursor: default;
     text-decoration: none;
@@ -112,7 +105,51 @@ a {
     border-radius: 20%;
 }
 
-.fa-user, .fa-shopping-cart, .fa-question-circle, .fa-address-book {
+.fa-user, .fa-shopping-cart, .fa-question-circle, .fa-address-book, .fa-facebook-square, .fa-instagram {
     color: red;
     margin-bottom: 4px;
+}
+
+.page-content {
+    background-color: bisque;
+}
+
+.footer-content {
+    background-color: #aaa;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-content a:hover{
+    text-decoration: underline;
+}
+
+.footer-link, .footer-help, .footer-contact, .footer-social {
+    margin: 8px 16px;
+    color: white;
+    font-size: 0.7em;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.footer-contact p {
+    margin: 0;
+}
+
+.media {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.media li {
+    display: inline;
+    margin: 0 8px 0 0;
 }
